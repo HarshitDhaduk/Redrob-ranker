@@ -78,7 +78,9 @@ running top-250 is retained). Modules:
 | `ranker/pipeline.py` | Streaming orchestration + CSV writer (spec-compliant ordering & tie-breaks). |
 | `rank.py` | CLI entry point. |
 | `app.py` | Streamlit sandbox (optional). |
-| `debug_explain.py`, `explain_id.py` | Dev tools used to calibrate the model (see git history). |
+| `tests/test_ranker.py` | Behavioural tests proving each anti-trap defence (honeypots, stuffers, hidden gems, dormant). |
+
+*(The exploratory calibration scripts used while tuning the model are preserved in the git history, not the working tree.)*
 
 ### How a score is built
 

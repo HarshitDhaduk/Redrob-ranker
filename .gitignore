@@ -7,3 +7,6 @@ venv/
 candidates.jsonl
 candidates.jsonl.gz
 *.tmp
+# local diagnostic scripts — kept on disk, out of the published repo
+debug_explain.py
+explain_id.py
