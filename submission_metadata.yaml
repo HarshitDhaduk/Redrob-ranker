@@ -1,26 +1,27 @@
 # Redrob Hackathon — Submission Metadata
-# Fill in the team-identity placeholders (<<...>>) before submitting on the portal.
+# Contact email/phone are entered on the submission portal, not committed to this
+# public repo. Add the sandbox link once app.py is deployed.
 
 # ============================================================================
-# Team identity   <<< EDIT THESE >>>
+# Team identity
 # ============================================================================
-team_name: "<<your-team-name>>"
+team_name: "Harshit Dhaduk"
 
 primary_contact:
-  name: "<<Full Name>>"
-  email: "<<primary@example.com>>"
-  phone: "<<+91-XXXXXXXXXX>>"
+  name: "Harshit Dhaduk"
+  email: "provided on the submission portal"   # kept out of this public repo
+  phone: "provided on the submission portal"   # kept out of this public repo
 
 team_members:
-  - name: "<<Member 1>>"
-    email: "<<member1@example.com>>"
-    role: "ML Engineer"
+  - name: "Harshit Dhaduk"
+    email: "provided on the submission portal"
+    role: "Team Lead / ML Engineer"
 
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
 github_repo: "https://github.com/HarshitDhaduk/Redrob-ranker"
-sandbox_link: "<<https://huggingface.co/spaces/USERNAME/redrob-ranker>>"  # streamlit run app.py
+sandbox_link: "TODO — deploy app.py (Streamlit Cloud / HF Spaces) and add the URL here + on the portal"
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
 # ============================================================================

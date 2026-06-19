@@ -1,10 +1,13 @@
-# The ranker itself has ZERO third-party dependencies — it runs on the Python
-# 3.9+ standard library alone. This is deliberate: it guarantees the Stage-3
-# reproduction (CPU-only, no network, 16 GB, 5 min) cannot fail on a dependency,
-# and it makes the "no hosted LLM during ranking" constraint structural.
+# The ranker has ZERO third-party dependencies — it runs on the Python 3.9+
+# standard library alone, so `pip install -r requirements.txt` is intentionally
+# a no-op. This guarantees the Stage-3 reproduction (CPU-only, no network, 16 GB,
+# 5 min) cannot fail on a dependency, and makes the "no hosted LLM during
+# ranking" constraint structural.
 #
 #   python rank.py --candidates candidates.jsonl --out submission.csv
 #
-# The OPTIONAL hosted demo (app.py) uses Streamlit only for the UI; it is not
-# part of the ranking path. Install it only if you want to run the sandbox:
-streamlit>=1.30 ; extra == "demo"
+# The OPTIONAL hosted demo (app.py) is the ONLY thing that needs a third-party
+# package — Streamlit, for the UI. It is not on the ranking path. Install it
+# separately only if you want to run the sandbox:
+#
+#   pip install "streamlit>=1.30"
