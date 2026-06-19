@@ -19,7 +19,7 @@ team_members:
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
-github_repo: "<<https://github.com/USERNAME/redrob-ranker>>"
+github_repo: "https://github.com/HarshitDhaduk/Redrob-ranker"
 sandbox_link: "<<https://huggingface.co/spaces/USERNAME/redrob-ranker>>"  # streamlit run app.py
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
